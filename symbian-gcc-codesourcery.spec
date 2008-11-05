@@ -16,6 +16,8 @@ URL:		http://www.codesourcery.com/gnu_toolchains/arm
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		no_install_post_strip	1
+
 %description
 CodeSourcery, in partnership with ARM, Ltd., develops improvements to
 the GNU Toolchain for ARM processors and provides regular, validated
